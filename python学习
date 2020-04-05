@@ -10,6 +10,11 @@ print('guess a num')
 a=input()
 print('you enter is '+ a)
 
+a=input('guess a num:')
+print('you enter is '+ a)
+
+
+
 money=20
 result=money*2+50
 print(result)
