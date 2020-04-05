@@ -1,5 +1,22 @@
+#输入输出
 print('who do you think i am')
 input()
 print('how old are you')
 input()
 print('oh yes')
+
+#变量
+print('guess a num')
+a=input()
+print('you enter is '+ a)
+
+money=20
+result=money*2+50
+print(result)
+
+a='hello,world'
+b=1.414
+c=(1!=2)
+d=(True and False)
+e=(True or False)
+print(a,b,c,d,e)
