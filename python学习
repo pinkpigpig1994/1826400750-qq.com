@@ -25,3 +25,48 @@ c=(1!=2)
 d=(True and False)
 e=(True or False)
 print(a,b,c,d,e)
+
+
+#1. 字符串拼接
+name = 'Crossin'
+age = 18
+code = 'Python'
+
+# 通过 % 将 name, age, code 拼接成一句话
+# 输出 Crossin is 18, he writes Python.
+result='%s is %d,he writes %s.'%(name,age,code)
+print(result)
+
+
+#2. print()
+num1 = '3.3'
+num2 = 2.5
+
+# 将 num1 转换为浮点数
+num1 = float(num1)
+
+# 再和 num2 相加后输出
+print(num1+num2)
+
+#3. bool类型转换
+#判断以下结果的值为 True 还是 False：
+
+a=bool(-123)
+#f t
+b=bool(0)
+#f
+c=bool('abc')
+#t
+e=bool('False')
+#t
+f=bool('')
+#t f
+g=bool([])
+#f
+h=bool({})
+#f
+i=bool([''])
+#f t
+j=bool(None)
+#f
+print(a,b,c,e,f,g,h,i,j)
