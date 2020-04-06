@@ -135,3 +135,73 @@ elif 18.5 <= BMI < 24:
     print('you weight is normal')
 else :
     print ('you weight is too heavy')
+
+练习
+1.
+计算100以内所有3的倍数的和（即：计算3、6、9...
+96、99
+的和）
+'''
+sum=0
+for i in range(1,100):
+    if i%3==0:
+        sum=i+sum
+print(sum)
+'''
+2.
+分别输入高和宽两个整数，输出对应高度和宽度的矩形。比如：
+输入3和4，输出
+
+* * * *
+* * * *
+* * * *
+输入5和7，输出
+
+* * * * * * *
+* * * * * * *
+* * * * * * *
+* * * * * * *
+* * * * * * *
+'''
+print('分别输入高和宽两个整数')
+h=int(input())
+w=int(input())
+for i in range(1,h+1):
+#    print('*', end=" ")
+    for j in range(1,w+1):
+        print('*',end=" ")
+    print('\n')
+
+'''
+3.
+输出九九乘法口诀表
+# 1 x 1 = 1
+# 1 x 2 = 2
+# ...
+# 9 x 1 = 9
+# ...
+# 9 x 9 = 81
+'''
+for i in range(1,10):
+    for j in range(1,10):
+        sum=i*j
+        print('%d x %d = %d'%(i,j,sum))
+'''
+
+
+4.
+跳出循环
+nums = [23, 45, 8, 13, 50, 43, 21]
+
+# 把 nums 里的值从前向后累加
+# 当总和超过 100 时则不再继续累加
+
+'''
+sum=0
+nums = [23, 45, 8, 13, 50, 43, 21]
+for n in nums:
+    sum=sum+n
+    if sum>100:
+        break
+    print(n)
+print(sum)
